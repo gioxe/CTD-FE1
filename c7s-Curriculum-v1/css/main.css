@@ -1,0 +1,72 @@
+footer{
+    background: #005677;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+  }
+  footer .foot{
+    margin: 0 auto;
+    width: 20%;
+    text-align:center;
+    height:50px;
+    display: flex;
+    align-items: center;
+  }
+  /*
+  footer .copy, footer img{
+  
+  }
+  */
+
+  footer img{
+    margin: 0 5px;
+  }
+  #main{
+    background-color:#eeeeee;
+    overflow:hidden;
+  }
+  #datosPersonales, #formacion, #experiencia{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  #datosPersonales h2, #formacion h2, #experiencia h2{
+    background-color: #c4c4c4;
+    font-size: 20px;
+    color: #005677;
+    padding: 10px;
+    font-family: 'Times New Roman';
+    letter-spacing: 5px;
+    margin: 1.5em auto;
+    width: 100%;
+    overflow: hidden;
+  }
+  #main .profileImg img{
+    margin: 0 auto;
+    display: block;
+  }
+  .docTitle h1{
+    text-align:center;
+    background-color: #c4c4c4;
+    color: #005677;
+    font-size: 35px;
+    font-family: 'Times New Roman';
+    letter-spacing: 9px;
+    font-weight:bold;
+    padding: 5px;
+    margin-bottom: 90px;
+  }
+  .entrada{
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+  }
+  .entrada div{
+    display: inline-block;
+  }
+  .entrada .fecha{
+    width: 100px;
+    font-weight: bold;
+  }
+  .entrada .detalle{
+    width: 500px;
+  }
