@@ -1,0 +1,60 @@
+body{
+    background-color: gray;
+}
+main{
+    width: 85%;
+    margin: 0 auto;
+}
+.top-bar{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.top-bar span{
+    margin-left: 50px;
+}
+.top-bar nav{
+    float: right;
+}
+.top-bar .regional, .top-menu .main-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0 30px;
+}
+.top-bar .regional li,
+.top-menu .main-menu li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.top-bar .regional a,
+.top-menu .main-menu a{
+    color: white;
+    text-decoration: none;
+}
+.top-menu{
+    width: 100%;
+    display: block;
+    height: 50px;
+}
+.top-menu img{
+    margin: 5px 20px 3px;
+    width: 10%;
+    display: inline-block;
+    float:left;
+}
+.top-menu nav{
+    width: 80%;
+    display: inline-block;
+    text-align: right;
+    padding: 10px 0;
+}
+.main-menu{
+    width: 100%;
+}
+.top-menu{
+    background-color: #F0A83E;
+}
+.slide{
+    width: 100%;
+    overflow-x: hidden;
+}

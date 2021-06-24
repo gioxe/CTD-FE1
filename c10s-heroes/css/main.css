@@ -1,0 +1,88 @@
+body{
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+footer{
+    background-color: #00669F;
+    color: white;
+    padding: 10px;
+}
+button{
+    background-color: #00669F;
+    color: white;
+    padding: 15px 45px;
+    border: none;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+}
+#heroes{
+    padding: 110px 15px;
+}
+.top-bar{
+    background-color: #1CD1B0;
+    padding: 10px;
+}
+.title{
+    background-color: #00669F;
+    padding: 20px;
+    font-size: 3em;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    /*font-weight: bold;*/
+}
+.card{
+    width: 30%;
+    display: inline-block;
+    margin: 0 15px;
+}
+.card .heart{
+    position: relative;
+    top: -155px;
+    left: 10px;
+    color: #CC2424;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    height: 0;
+    font-size: 1.5em;
+}
+.card>img, .card .content{
+    display: block;
+    margin: 0;
+    float: left;
+}
+.card>img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 170px;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+}
+.card .content{
+    background-color: #F3F3F3;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.hero-picture img{
+    width: 33%;
+    border-radius: 50%;
+    position: relative;
+    top: -45px;
+    left: 33%;
+}
+.hero-content{
+    top: -40px;
+    position: relative;
+    padding: 0 10px;
+}
+.hero-content h2{
+    text-align: center;
+    font-size: 2em;
+}
