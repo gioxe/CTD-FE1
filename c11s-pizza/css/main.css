@@ -94,11 +94,12 @@ section .top5 .pizzas{
     display: flex;
     flex-direction: row;
     margin-left: 10px;
+    justify-content: space-between;
 }
 section .top5 .pizzas .image{
     background: url('../img/falling.png') 50% 50% no-repeat;
     background-size: contain;
-    width: 100%;
+    width: 40%;
     height: 100px;
     padding: 25px;
 }
