@@ -1,18 +1,8 @@
+/*etiquetas*/
 body{
     background-color: #E5E5E5;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-}
-main{
-    width: 100%;
-    margin: 0 auto;
-    background-color: #ffffff;
-    overflow: hidden;
-}
-footer{
-    background-color: #00669F;
-    color: white;
-    padding: 10px;
 }
 button{
     background-color: #00669F;
@@ -23,8 +13,19 @@ button{
     margin: 10px auto;
     display: block;
 }
+footer{
+    background-color: #00669F;
+    color: white;
+    padding: 10px;
+}
 hr{
     width: 100%;
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
 }
 nav a:visited,
 nav a:hover,
@@ -39,19 +40,22 @@ nav a:active{
 nav a.current{
     color:deepskyblue;
 }
+/*ids*/
+#heroes{
+    padding: 110px 15px;
+}
+#new-hero{
+    padding: 20px;
+}
+
+/*clases*/
+
 .title a:visited,
 .title a:hover,
 .title a:link,
 .title a:active{
     color: white;
     text-decoration: none;
-}
-
-#heroes{
-    padding: 110px 15px;
-}
-#new-hero{
-    padding: 20px;
 }
 .top-bar{
     background-color: #1CD1B0;
