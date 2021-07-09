@@ -24,7 +24,7 @@
                     <li><a href="new-hero.html" class="current">Nuevo héroe</a></li>
                     <li><a href="#">Contacto</li>
                     <li><a href="#">Registrarme</a></li>
-                    <li><a href="login.html" class="">Ingresar</a></li>
+                    <li><a href="login.html" class=" ">Ingresar</a></li>
                 </ul> 
             </nav>
         </header>
@@ -35,11 +35,11 @@
                 <div class="column">
                     <div class="input">
                         <label for="hero-name">*Nombre</label>
-                        <input type="text" id="hero-name" tabindex="1">
+                        <input type="text" id="hero-name" tabindex="1" required>
                     </div>
                     <div class="input">
                         <label for="hero-date">*Fecha</label>
-                        <input type="date" id="hero-date" tabindex="3">
+                        <input type="date" id="hero-date" tabindex="3" required>
                     </div>
                     <div class="input">
                         <textarea name="descripción" id="desc" cols="35" rows="15" placeholder="Descripción" tabindex="5"></textarea>
@@ -48,7 +48,7 @@
                 <div class="column">
                     <div class="input">
                         <label for="hero-specie">*Especie</label>
-                        <select id="hero-specie" tabindex="2" >
+                        <select id="hero-specie" tabindex="2" required>
                             <option value="">Especie</option>
                             <option value="1">Humano</option>
                             <option value="2">Amazona</option>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="input">
                         <label for="hero-image">*Agregar Foto</label>
-                        <input type="file" id="hero-image" tabindex="4">
+                        <input type="file" id="hero-image" tabindex="4" required>
                     </div>
                     <div class="input powers">
                         <p>Poderes</p>
