@@ -23,6 +23,9 @@ button{
     margin: 10px auto;
     display: block;
 }
+hr{
+    width: 100%;
+}
 nav a:visited,
 nav a:hover,
 nav a:link{
