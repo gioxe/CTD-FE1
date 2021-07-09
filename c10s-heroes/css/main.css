@@ -1,9 +1,10 @@
 body{
     background-color: #E5E5E5;
     font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 }
 main{
-    width: 1024px;
+    width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
     overflow: hidden;
@@ -22,24 +23,64 @@ button{
     margin: 10px auto;
     display: block;
 }
+nav a:visited,
+nav a:hover,
+nav a:link{
+    color: white;
+    text-decoration: none;
+}
+nav a:active{
+    text-decoration: none;
+    color:cadetblue;
+}
+nav a.current{
+    color:deepskyblue;
+}
+.title a:visited,
+.title a:hover,
+.title a:link,
+.title a:active{
+    color: white;
+    text-decoration: none;
+}
+
 #heroes{
     padding: 110px 15px;
+}
+#new-hero{
+    padding: 20px;
 }
 .top-bar{
     background-color: #1CD1B0;
     padding: 10px;
 }
 .title{
+    color:  white;
     background-color: #00669F;
     padding: 20px;
     font-size: 3em;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
     /*font-weight: bold;*/
 }
+.menu{
+    background-color: #001D2D;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul{
+    text-decoration: none;
+    margin: 5px 15px;
+}
+.menu li{
+    color: white;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1em;
+}
 .card{
     width: 30%;
     display: inline-block;
-    margin: 0 15px;
+    margin: 10px 1%;
 }
 .card .heart{
     position: relative;
@@ -85,4 +126,134 @@ button{
 .hero-content h2{
     text-align: center;
     font-size: 2em;
+}
+
+/* NEW HERO */
+
+#new-hero{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #00669F;
+    margin: 30px auto;
+    border-radius: 10px;
+    color: white;
+
+}
+#new-hero>h2,
+#new-hero>p{
+    margin: 0 auto;
+}
+#new-hero input,
+#new-hero select,
+#new-hero textarea{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+}
+#new-hero input[type="checkbox"],
+#new-hero input[type="radio"],
+#new-hero label
+{
+    width: auto;
+}
+.new-hero-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.new-hero-form .column{
+    text-align: left;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.column .input{
+    margin: 10px 0;
+    flex-direction: column;
+}
+.column .input p{
+    margin: 0;
+}
+.new-hero-form label{
+    display: block;
+}
+.powers label, .hero-type label{
+    display: inline-block;
+}
+#add-hero{
+    margin: 5px auto;
+    width: 60%;
+    background-color: #1CD1B0;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+/* LOGIN */
+
+#login{
+    width: 50%;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+}
+#login h1{
+    font-size: 2.5em;
+    margin-left: 4px;
+}
+#login span{
+    text-align: center;
+}
+#login input{
+    border: 1px solid black;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+}
+#login button{
+    background-color: #1CD1B0;
+    color: black;
+    border: 0 solid transparent;
+    border-radius: 10px;
+}
+
+/*
+MEDIA QUERIES ZONE
+*/
+
+@media only screen and (max-width: 800px) {
+    .card{
+        width: 47%;
+    }
+    #new-hero{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .card{
+        display: grid;
+        width: 90%;
+        margin: 10px auto;
+        min-width: 300px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    #new-hero{
+        width: 80%;
+    }
+    .new-hero-form{
+        flex-direction: column;
+    }
+    .new-hero-form .column{
+        width: 100%;
+    }
 }

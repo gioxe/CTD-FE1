@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Héroes</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d80e010d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="top-bar">
+                20% de descuento en todos los productos!
+            </div>
+            <div class="title">
+                <a href="index.html">Heroes</a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="new-hero.html" class="current">Nuevo héroe</a></li>
+                    <li><a href="#">Contacto</li>
+                    <li><a href="#">Registrarme</a></li>
+                    <li><a href="login.html" class="">Ingresar</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <section id="new-hero">
+            <h2>Añadí tu super</h2>
+            <p>Agregá tu personaje favorito completando las opciones</p>
+            <form class="new-hero-form" action="">
+                <div class="column">
+                    <div class="input">
+                        <label for="hero-name">*Nombre</label>
+                        <input type="text" id="hero-name" tabindex="1">
+                    </div>
+                    <div class="input">
+                        <label for="hero-date">*Fecha</label>
+                        <input type="date" id="hero-date" tabindex="3">
+                    </div>
+                    <div class="input">
+                        <textarea name="descripción" id="desc" cols="35" rows="15" placeholder="Descripción" tabindex="5"></textarea>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input">
+                        <label for="hero-specie">*Especie</label>
+                        <select id="hero-specie" tabindex="2" >
+                            <option value="">Especie</option>
+                            <option value="1">Humano</option>
+                            <option value="2">Amazona</option>
+                            <option value="3">Extraterrestre</option>
+                            <option value="4">Acuático</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="hero-image">*Agregar Foto</label>
+                        <input type="file" id="hero-image" tabindex="4">
+                    </div>
+                    <div class="input powers">
+                        <p>Poderes</p>
+                        <input type="checkbox" id="poder1" name="p1" value="Volar">
+                        <label for="poder1"> Volar</label><br>
+                        <input type="checkbox" id="poder2" name="p2" value="Superinteligencia">
+                        <label for="poder2"> Superinteligencia</label><br>
+                        <input type="checkbox" id="poder3" name="p3" value="Vista Laser">
+                        <label for="poder3"> Vista Laser</label><br>
+                        <input type="checkbox" id="poder4" name="p4" value="Billetera gorda">
+                        <label for="poder4"> Billetera gorda</label><br>
+                    </div>
+                    <hr>
+                    <div class="input hero-type">
+                        <p>Tipo de personaje</p>
+                        <input type="radio" id="hero-type1" name="hero-type" value="heroe">
+                        <label for="hero-type1">Héroe / Heroína</label><br>
+                        <input type="radio" id="hero-type2" name="hero-type" value="villano">
+                        <label for="hero-type2">Villano / Villana</label>
+                    </div>
+                </div>
+            </form>
+            <button id="add-hero">Añadir</button>
+        </section>
+        <footer>
+            Todos los derechos reservados a FRONT END 1 - <b>HTML & CSS by Giovanny</b>
+        </footer>
+    </main>
+</body>
+</html>
