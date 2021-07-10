@@ -58,3 +58,25 @@ main{
     width: 100%;
     overflow-x: hidden;
 }
+
+/*
+.main-menu a:hover::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f1b0";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+*/
+.main-menu a::before{
+    display: inline-block;
+    content: ' ';
+    background-image: url(../img/paw.svg);
+    background-size: 14px 14px;
+    height: 14px;
+    width: 14px;
+    margin-right: 3px;
+}
