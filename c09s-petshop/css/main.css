@@ -60,18 +60,29 @@ main{
 }
 
 /*
-.main-menu a:hover::before{
+https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-yourself
+*/
+
+.main-menu a::before{
     font-family: "Font Awesome 5 Free";
     font-weight: 900; 
     content: "\f1b0";
-    display: inline-block;
+    display: inline-block;  
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
+.main-menu a:hover::before{
+    color: black;
+}
+
+/*
+Versión alternativa con vector de patica en formato SVG
 */
-.main-menu a::before{
+
+
+/* .main-menu a::before{
     display: inline-block;
     content: ' ';
     background-image: url(../img/paw.svg);
@@ -79,4 +90,4 @@ main{
     height: 14px;
     width: 14px;
     margin-right: 3px;
-}
+} */
