@@ -1,10 +1,23 @@
+@font-face {
+    font-family: 'Roboto';
+     src: url(../fonts/Roboto/Roboto-Regular.ttf     )  format('truetype')
+  }
+
 body{
     background-color: gray;
+    font-family: 'Roboto';
 }
 main{
-    width: 85%;
+    width:100%;
     margin: 0 auto;
 }
+header{
+    display: flex;
+    flex-direction: column;
+}
+/********************************************
+                TOP BAR
+********************************************/
 .top-bar{
     width: 100%;
     background-color: black;
@@ -31,38 +44,35 @@ main{
     color: white;
     text-decoration: none;
 }
+/********************************************
+                TOP MENU
+********************************************/
 .top-menu{
     width: 100%;
-    display: block;
-    height: 50px;
+    height: 80px;
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.top-menu img{
+.top-menu .logoImage{
     margin: 5px 20px 3px;
-    width: 10%;
-    display: inline-block;
+    width: 20%;
+    /*display: inline-block;*/
     float:left;
+    cursor: pointer;
 }
-.top-menu nav{
-    width: 80%;
-    display: inline-block;
-    text-align: right;
-    padding: 10px 0;
+.top-menu .logoImage img{
+    width: 100%;
 }
 .main-menu{
     width: 100%;
-}
-.top-menu{
-    background-color: #F0A83E;
-}
-.slide{
-    width: 100%;
-    overflow-x: hidden;
 }
 
 /*
 https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-yourself
 */
-
+/* 
 .main-menu a::before{
     font-family: "Font Awesome 5 Free";
     font-weight: 900; 
@@ -72,17 +82,17 @@ https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/hosting-font-awesome-y
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+    color:blue;
 }
 .main-menu a:hover::before{
-    color: black;
-}
+    color: white;
+} */
 
 /*
 Versión alternativa con vector de patica en formato SVG
 */
 
-
-/* .main-menu a::before{
+.main-menu a::before{
     display: inline-block;
     content: ' ';
     background-image: url(../img/paw.svg);
@@ -90,4 +100,117 @@ Versión alternativa con vector de patica en formato SVG
     height: 14px;
     width: 14px;
     margin-right: 3px;
-} */
+}
+.main-menu a:hover::before{
+    background-image: url(../img/paw2.svg)
+}
+
+/********************************************
+                    SLIDE
+********************************************/
+.slide{
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/slide.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 350px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.slide .slideContent{
+    text-align: center;
+    margin-right: 4vw;
+}
+.slideContent h2{
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+}
+.slideContent .btn_comederos{
+    margin-top: 2em;
+}
+.slideContent a{
+    text-decoration: none;
+    background-color: #F0A83E;
+    color: white;
+    padding: 15px 25px;
+}
+.slideContent a:hover{
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+
+/********************************************
+            HOME CONTENT
+********************************************/
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.content>img{
+    width: 100px;
+    height: 92px;
+    margin-top: 1em;
+}
+.content h1{
+    color: #3C2313;
+    font-size:3em;
+    margin: 0.5em auto;
+}
+.content p{
+    font-size: 1.5em;
+    margin: 0;
+}
+.content p a:link,
+.content p a:visited{
+    color: #666666;
+    text-decoration: none;
+}
+.content p a:hover{
+    color: #3C2313;
+    font-weight: bold;
+}
+.tabsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 3em auto;
+}
+.tabsContainer .card{
+    background-color: #FBFAF6;
+    width: 31%;
+    text-align: center;
+    border: 1px solid #efebeb;
+    overflow: auto;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+.tabsContainer .card:hover{
+    border: 1px solid #d2cfcf;
+}
+.tabsContainer .card::before{
+    content: '';
+    width:10px;
+    height: 10px;
+    background-color: red;
+
+}
+.card img{
+    object-fit: cover;
+}
+.card p.productName{
+    color: #3C2313;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.card p.price{
+    color: #F0A83E;
+    font-size: 1.5em;
+}

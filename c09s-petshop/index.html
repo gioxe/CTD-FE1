@@ -26,7 +26,9 @@
             </nav> 
         </div>
         <div class="top-menu">
-            <img src="https://dummyimage.com/100x50/000/fff.jpg&text=LOGO" alt="logo perros"> 
+            <a class="logoImage" href="index.html">
+                <img src="img/logo.png" alt="logo perros">
+            </a>
             <nav> 
                 <ul class="main-menu">
                     <li><a href="#">Categorías</a></li>
@@ -38,26 +40,34 @@
         </div>      
     </header> 
     <section class="slide">
-        <img src="https://dummyimage.com/1200x200/000/fff.jpg&text=SLIDE" alt="comedero perros" >
-        <h2>¡Es un placer tenerte aqui!</h2>
-        <p>Comederos en descuento </p>
-        <p><a href="# "> COMEDEROS </a> </p>
+        <div class="slideContent">
+            <h2>¡Es un placer tenerte aqui!</h2>
+            <p>Comederos en descuento </p>
+            <p class="btn_comederos"><a href="# "> COMEDEROS </a> </p>
+        </div>
     </section>
 
-    <section>
-        <img src="img/patita.png" alt="huella" width="200px" height="200px" >
+    <section class="content">
+        <img src="img/pawPrint.PNG" alt="huella" width="200px" height="200px" >
         <h1>Productos destacados</h1>
-        <span>comederos</span> <span>accesorios</span> <span>comida</span>
-        <br>
-        <img src="img/imagen1.png" alt="alimento canino" > 
-        <p>Juguete Churrasquito</p>
-        <p>$150</p>
-        <img src="Img/imagenhuesos.png" alt="huesos" > 
-        <p>Juguete Huesitos</p>
-        <p>$150</p>
-        <img src="Img/carne.png" alt="churrasquito" > 
-        <p>Juguete Churrasquito</p>
-        <p>$150</p>
+        <p><a href="#">comederos</a> - <a href="#">accesorios</a> - <a href="#">comida</a> </p>
+        <div class="tabsContainer">
+            <div class="card">
+                <img src="img/churrasquito.png" alt="alimento canino" > 
+                <p class="productName">Juguete Churrasquito</p>
+                <p class="price">$150</p>
+            </div>
+            <div class="card">
+                <img src="Img/comedero.png" alt="huesos" > 
+                <p class="productName">Juguete Huesitos</p>
+                <p class="price">$150</p>
+            </div>
+            <div class="card">
+                <img src="Img/huesito.png" alt="churrasquito" > 
+                <p class="productName">Juguete Churrasquito</p>
+                <p class="price">$150</p>
+            </div>
+        </div>
     </section>
     <footer>
         Todos los derechos reservados Front End
